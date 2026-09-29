@@ -51,3 +51,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
         return 'Halaman Kelola Kategori';
     })->name('categories.index');
 });
+// RIWAYAT TRANSAKSI KASIR
+Route::get('/pos/history', function () {
+    return 'Riwayat Transaksi Saya';
+})->name('pos.history');
